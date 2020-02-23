@@ -21,6 +21,7 @@ Currently supported maze solving algorithms are the most popular pathfinding alg
  * Breadth-first search (BFS)
  * Dijkstra
  * A* with Manhattan distance as heuristic function
+ * Bidirectional search
 
 ## Controls
 
