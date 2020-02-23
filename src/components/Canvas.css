@@ -1,0 +1,99 @@
+.canvas {
+    margin-left: auto;
+    margin-right: auto;
+    margin: 2em;
+    background-color: black;
+  }
+
+.error {
+  color: #e3110d;
+  padding: 15px 50px;
+}
+
+button {
+  margin: 0px 20px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4465f7;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  font-weight: 900;
+  border: 1px solid #4465f7;
+  border-radius: .5em;
+}
+
+button:hover {
+  background-color: #2048f7;
+}
+
+button:disabled {
+  cursor: default;
+  background-color: #a2a2a2;
+  border-color: #a2a2a2;
+}
+
+label {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+select {
+  font-size: 16px;
+  font-weight: 600;
+  color: #4465f7;
+  padding: 10px 10px;
+  margin: 0;
+  border: 1px solid #aaa;
+  border-radius: .5em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+select option {
+  font-weight: 400;
+  color: #444;
+}
+
+.slider {
+  translate: 0px 5px;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 15px;
+  background: white;
+  border-radius: .5em;
+}
+
+.slider:hover {
+  background-color: #e5e4e4;
+  cursor: pointer;
+}
+
+.slider:disabled {
+  cursor: default;
+  background-color: #a2a2a2;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  border: 0px;
+  width: 25px;
+  height: 25px;
+  background: #4465f7;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  border: 0px;
+  width: 25px;
+  height: 25px;
+  background: #4465f7;
+  cursor: pointer;
+}
