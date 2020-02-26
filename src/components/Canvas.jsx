@@ -67,8 +67,9 @@ export class Canvas extends Component {
     }
 
     updateNodeDimensions() {
+        const silderRect = this._sizeSlider.getBoundingClientRect()
         this.startPosX = 0.1 * window.innerWidth
-        this.startPosY = 0.15 * window.innerHeight
+        this.startPosY = Math.max(0.15 * window.innerHeight, 80 + (silderRect.top + silderRect.height))
         this.setState(prevState => ({
             ...prevState,
             nodeDimensions: 0.8 * window.innerWidth / (2*this.width-1)
@@ -193,6 +194,9 @@ export class Canvas extends Component {
     }
 
     initState() {
+        const silderRect = this._sizeSlider.getBoundingClientRect()
+        this.startPosX = 0.1 * window.innerWidth
+        this.startPosY = Math.max(0.15 * window.innerHeight, 80 + (silderRect.top + silderRect.height))
         this.graph = Graph.buildGraph(this.width, this.height)
         const {mst, maze} = kruskal(this.graph)
         this.maze = maze
