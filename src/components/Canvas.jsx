@@ -214,7 +214,8 @@ export class Canvas extends Component {
             mstEdges: [],
             startVertex: -1,
             endVertex: -1,
-            errorMessage: ""
+            errorMessage: "",
+            nodeDimensions: 0.8 * window.innerWidth / (2*this.width-1)
         }), () => this.initState())
     }
 
